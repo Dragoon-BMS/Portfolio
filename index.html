@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhavya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 32);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 64);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(154, 154, 226);
+        font-size: 1rem;
+      }
+
+      main hr {
+        margin: 60px 84px;
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2.5rem;
+      }
+
+      .leftSection .buttons {
+        padding: 40px 0;
+      }
+
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 110%;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 96vh;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+
+      .image-top {
+        width: 40px;
+        position: relative;
+        top: -42px;
+        left: -20px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 12px;
+      }
+
+      footer {
+        background-color: #0e0e1a;
+      }
+
+      .footer {
+        display: flex;
+        padding: 30px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 220px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      @media screen and (max-width: 1400px) {
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+
+        .secondSection .vertical {
+          height: unset;
+        }
+        .box {
+          flex-direction: column;
+        }
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+        }
+        .secondSection .box {
+          width: 50vw;
+        }
+        nav {
+          flex-direction: column;
+        }
+        .leftSection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightSection {
+          width: 72% !important;
+          display: flex;
+          justify-content: center;
+        }
+
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 450vh;
+        }
+        body {
+          min-width: fit-content;
+        }
+
+        .image-top {
+          top: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Bhavya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="#middle">Activities</a></li>
+            <li><a href="#bottom">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="purple">Bhavya</span></div>
+
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <div id="middle"><hr /></div>
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Past Activities</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">Learning Ethical Hacking(2020)</div>
+            <div class="vertical-desc">
+              Amidst the pandemic, my interest in cybersecurity led me to
+              explore Kali Linux through self-guided learning on platforms like
+              YouTube. Installing Kali Linux, I engaged in ethical hacking
+              exercises with friends' consent. However, after six months, I
+              realized my progress had plateaued and my journey ended.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="web-development.png" alt="" />
+            <div class="vertical-title">Learning Web Development(2021)</div>
+            <div class="vertical-desc">
+              After concluding my exploration in cybersecurity, I shifted my
+              focus to web development. Learning HTML, CSS, and JavaScript
+              through YouTube, I found it to be a highly useful skill. Following
+              instructional lectures, I honed my proficiency and applied my
+              skills to create projects for both personal use and for friends.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="portfolio.jpg" alt="" />
+            <div class="vertical-title">Built this portfolio(2022)</div>
+            <div class="vertical-desc">
+              My first web development project was my portfolio, designed as a
+              central record for future creations. Despite academic pressures
+              post-pandemic, the portfolio showcases my commitment and
+              proficiency in web development, serving as a source of pride
+              despite the limited project output.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="chat.png" alt="" />
+            <div class="vertical-title">Built a real-time chat forum(2022)</div>
+            <div class="vertical-desc">
+              At the request of a friend concerned about privacy from his parents, I developed a web-based chat forum for discreet communication with his girlfriend. While the platform served its purpose, their relationship ultimately ended in a breakup. Nevertheless, I successfully fulfilled my friend's request for a secure and private means of communication.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="news.png" alt="" />
+            <div class="vertical-title">Built a news reading website(2022)</div>
+            <div class="vertical-desc">
+              Responding to my father's advice on staying informed, I created a custom news website tailored to my preferences. This personalized platform not only provided a more accessible news experience but also helped me cultivate a consistent habit of staying updated on current affairs.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Youtube.png" alt="" />
+            <div class="vertical-title">Started a Youtube channel(2023)</div>
+            <div class="vertical-desc">
+              Passionate about anime, I noticed a lack of English-subtitled trailers for upcoming releases on YouTube. Leveraging my five years of experience in the anime community, I launched a YouTube channel dedicated to producing accurate, professionally subtitled trailers. This endeavor not only filled a gap but also prompted me to acquire skills in video and photo editing for enhanced content presentation.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="blogger.png" alt="" />
+            <div class="vertical-title">Started a Tech Blog(2023)</div>
+            <div class="vertical-desc">
+              In late 2023, the supposed discovery of LK99 as a room-temperature superconductor was debunked, highlighting widespread inaccuracies in tech reporting as I found many articles with incomplete information. This realization prompted the launch of my own tech blog, committed to providing concise and current industry news, addressing the prevailing issue of incomplete information.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Bhavya's High School Portfolio</h3>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <div id="bottom">
+              <li>
+                <b><font size="+2">Contact me</font></b>
+              </li>
+              <li>Email:dragoonbms628@gmail.com</li>
+              <li>Discord:dragoon_bms</li>
+              <li>Youtube:AniSubTV</li>
+              <li>Blog:vision4tech.blogspot.com</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright&#169;bhavyaportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Youtuber", "Video Editor", "Tech Blogger"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
