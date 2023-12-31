@@ -62,19 +62,24 @@
         margin: 80px 0;
       }
 
-      .firstSection > div {
-        width: 30%;
-      }
-
       .leftSection {
+        width: 30%;
         font-size: 2.5rem;
       }
 
-      .leftSection .buttons {
-        padding: 40px 0;
+      .buttons {
+        display: flex;
+        justify-content: center;
       }
 
-      .leftSection .btn {
+      .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons vertically */
+        gap: 20px; /* Adjust the gap as needed */
+      }
+
+      .btn {
         padding: 12px;
         background: #1e2167;
         color: white;
@@ -84,9 +89,14 @@
         cursor: pointer;
       }
 
-      .rightSection img {
-        width: 110%;
+      .rightSection {
+        width: 30%; /* Adjust the width as needed */
       }
+
+      .rightSection img {
+        width: 110%; /* Adjust the width as needed */
+      }
+
       .purple {
         color: blueviolet;
       }
@@ -235,17 +245,26 @@
       <section class="firstSection">
         <div class="leftSection">
           <div>Hi, My name is <span class="purple">Bhavya</span></div>
-
           <div>and I am a passionate</div>
           <span id="element"></span>
           <div class="buttons">
-           <a href=resume.html> <button class="btn">Download Resume</button></a>
+            <div class="button-container">
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vTdxacCj7bEMZiNV5-Y9a01AGNpR0VwwACnHZCBKoqTBW85AAHDWgk9eUOd5TY7_w/pub"
+              >
+                <button class="btn">Download Resume</button>
+              </a>
+              <a href="https://github.com/Dragoon-BMS?tab=repositories">
+                <button class="btn">Visit Github</button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="rightSection">
           <img src="bg.png" alt="" />
         </div>
       </section>
+
       <div id="middle"><hr /></div>
       <section class="secondSection">
         <span class="text-gray">What I have done so far</span>
@@ -289,28 +308,48 @@
             <img class="image-top" src="chat.png" alt="" />
             <div class="vertical-title">Built a real-time chat forum(2022)</div>
             <div class="vertical-desc">
-              At the request of a friend concerned about privacy from his parents, I developed a web-based chat forum for discreet communication with his girlfriend. While the platform served its purpose, their relationship ultimately ended in a breakup. Nevertheless, I successfully fulfilled my friend's request for a secure and private means of communication.
+              At the request of a friend concerned about privacy from his
+              parents, I developed a web-based chat forum for discreet
+              communication with his girlfriend. While the platform served its
+              purpose, their relationship ultimately ended in a breakup.
+              Nevertheless, I successfully fulfilled my friend's request for a
+              secure and private means of communication.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="news.png" alt="" />
             <div class="vertical-title">Built a news reading website(2022)</div>
             <div class="vertical-desc">
-              Responding to my father's advice on staying informed, I created a custom news website tailored to my preferences. This personalized platform not only provided a more accessible news experience but also helped me cultivate a consistent habit of staying updated on current affairs.
+              Responding to my father's advice on staying informed, I created a
+              custom news website tailored to my preferences. This personalized
+              platform not only provided a more accessible news experience but
+              also helped me cultivate a consistent habit of staying updated on
+              current affairs.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="Youtube.png" alt="" />
             <div class="vertical-title">Started a Youtube channel(2023)</div>
             <div class="vertical-desc">
-              Passionate about anime, I noticed a lack of English-subtitled trailers for upcoming releases on YouTube. Leveraging my five years of experience in the anime community, I launched a YouTube channel dedicated to producing accurate, professionally subtitled trailers. This endeavor not only filled a gap but also prompted me to acquire skills in video and photo editing for enhanced content presentation.
+              Passionate about anime, I noticed a lack of English-subtitled
+              trailers for upcoming releases on YouTube. Leveraging my five
+              years of experience in the anime community, I launched a YouTube
+              channel dedicated to producing accurate, professionally subtitled
+              trailers. This endeavor not only filled a gap but also prompted me
+              to acquire skills in video and photo editing for enhanced content
+              presentation.
             </div>
           </div>
           <div class="vertical">
             <img class="image-top" src="blogger.png" alt="" />
             <div class="vertical-title">Started a Tech Blog(2023)</div>
             <div class="vertical-desc">
-              In late 2023, the supposed discovery of LK99 as a room-temperature superconductor was debunked, highlighting widespread inaccuracies in tech reporting as I found many articles with incomplete information. This realization prompted the launch of my own tech blog, committed to providing concise and current industry news, addressing the prevailing issue of incomplete information.
+              In late 2023, the supposed discovery of LK99 as a room-temperature
+              superconductor was debunked, highlighting widespread inaccuracies
+              in tech reporting as I found many articles with incomplete
+              information. This realization prompted the launch of my own tech
+              blog, committed to providing concise and current industry news,
+              addressing the prevailing issue of incomplete information.
             </div>
           </div>
         </div>
